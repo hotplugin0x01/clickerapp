@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import static io.hextree.weatherusa.InternetUtil.solve;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -22,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         String greeting = "Click on the button!";
+        String decoded = solve("moiba1cybar8smart4sheriff4securi");
+        Log.i("Flag", decoded);
         TextView homeText = findViewById(R.id.home_text);
         homeText.setText(greeting);
 
